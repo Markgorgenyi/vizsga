@@ -3,6 +3,7 @@ Milyen optikai kábeleket használtatok a CISCO laborban (vagy bárhol), Bolyki 
 Nem tudok róla, hogy az iskola a CISCO eszközökhöz vásárolt volna ilyet.
 Egyedül a MIKROTIK routerek hajlandók médiakonvertert fogadni, de azt nem hoszem, hogy használtatok.
 Olyan dolgok legyenek a portfólióban, amit meg is tudunk csinálni.
+T.S.
 
 Halló fiúk!
 
