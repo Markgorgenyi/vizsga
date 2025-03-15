@@ -1,3 +1,9 @@
+[2025.03.15.]
+Milyen optikai kábeleket használtatok a CISCO laborban (vagy bárhol), Bolyki tanárúrral?
+Nem tudok róla, hogy az iskola a CISCO eszközökhöz vásárolt volna ilyet.
+Egyedül a MIKROTIK routerek hajlandók médiakonvertert fogadni, de azt nem hoszem, hogy használtatok.
+Olyan dolgok legyenek a portfólióban, amit meg is tudunk csinálni.
+
 Halló fiúk!
 
 Nem kell új nevet adni a dokumentumnak.
