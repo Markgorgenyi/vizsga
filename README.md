@@ -1,4 +1,4 @@
-
+https://szit.hu/doku.php?id=oktatas:halozat:cisco
 
 [2025.03.15.]  
 Milyen optikai kábeleket használtatok a CISCO laborban (vagy bárhol), Bolyki tanárúrral?
