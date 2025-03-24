@@ -1,0 +1,41 @@
+Hálózati Felépítés és VLAN Elrendezés a Három Telephelyen
+
+A három telephelyes vállalati környezetben minden telephely különböző VLAN-okat használ a hálózati forgalom szegmentálására és a különböző funkcionális csoportok közötti biztonságos adatátvitel biztosítására. Az alábbiakban bemutatjuk a központi, gyár1 és gyár2 telephelyek hálózati struktúráját, beleértve azok VLAN-jait és IP címelrendezését.
+
+1. Központi Telephely (VLAN 15, VLAN 25, VLAN 35)
+A központi telephelyen három különböző VLAN kerül kialakításra, amelyek mindegyike különböző csoportok és funkciók számára biztosít elkülönített hálózati szegmenseket:
+
+VLAN 15 – Adminisztráció: Ez a VLAN az adminisztrációs munkavállalók számára biztosít hálózati hozzáférést. Az IP-cím 192.168.1.1/24, a hálózati maszk pedig 255.255.255.0.
+
+VLAN 25 – IT: Az informatikai csoport számára külön VLAN került kialakításra. Az IP-cím 192.168.2.1/24, a hálózati maszk pedig 255.255.255.0. Ez a VLAN biztosítja az IT infrastruktúra és szolgáltatások elkülönítését a többi funkcionális csoporttól.
+
+VLAN 35 – Vendéghálózat: A vendégek számára létrehozott VLAN, amely biztosítja az elkülönített internet-hozzáférést. Az IP-cím 192.168.3.1/24, és a hálózati maszk 255.255.255.0.
+
+2. Gyár1 Telephely (VLAN 45 – Gyártási VLAN)
+A Gyár1 telephelyén a gyártási folyamatokhoz szükséges eszközök és munkavállalók számára egy külön VLAN kerül kialakításra:
+
+VLAN 45 – Gyártási VLAN: Ez a VLAN biztosítja a gyártási eszközök és alkalmazottak elkülönített hálózati környezetét. Az IP-cím 192.168.4.1/24, a hálózati maszk pedig 255.255.255.0.
+
+3. Gyár2 Telephely (VLAN 55 – Értékesítési VLAN)
+A Gyár2 telephelyén egy külön VLAN kerül kialakításra az értékesítési csapat számára:
+
+VLAN 55 – Értékesítési VLAN: Ez a VLAN az értékesítési csapat számára biztosítja a hálózati hozzáférést, különválasztva őket a gyártási és adminisztrációs csoportoktól. Az IP-cím 192.168.5.1/24, a hálózati maszk pedig 255.255.255.0.
+
+Összegzés
+A három telephely különböző VLAN-jaival biztosítható a hálózati forgalom szegmentálása és biztonságosabb adatátvitel, miközben minden csoport számára elkülönített hálózati szegmensek biztosítanak optimális működést. Az alábbiakban összefoglaljuk az egyes VLAN-ok IP címekkel és maszkokkal:
+
+Központi telephely:
+
+VLAN 15 – Adminisztráció: 192.168.1.1/24
+
+VLAN 25 – IT: 192.168.2.1/24
+
+VLAN 35 – Vendéghálózat: 192.168.3.1/24
+
+Gyár1 telephely:
+
+VLAN 45 – Gyártási VLAN: 192.168.4.1/24
+
+Gyár2 telephely:
+
+VLAN 55 – Értékesítési VLAN: 192.168.5.1/24
