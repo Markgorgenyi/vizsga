@@ -1,3 +1,5 @@
+Jó estét tanárúr! Sikerült a dhcp, most már rendesen felveszik az ip címet a központba és a telephely1ben, és ipv6is állítva lett ha jól csináltam, és ha lesz ideje vessen már rá egy pillantást legyen szíves és szerdán szakmai tanácsal bombázon agyon hogy mi is kell még és mit lehet javítani,Szép estét!
+
 https://szit.hu/doku.php?id=oktatas:halozat:cisco
 
 [2025.03.15.]  
