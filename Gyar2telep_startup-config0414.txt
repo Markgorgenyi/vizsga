@@ -1,0 +1,106 @@
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Gyar2telep
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+crypto isakmp policy 10
+ encr aes
+ authentication pre-share
+ group 2
+!
+crypto isakmp key telephely2key address 192.168.1.1
+!
+!
+!
+crypto ipsec transform-set transform esp-aes esp-sha-hmac
+!
+crypto map vpnmap 10 ipsec-isakmp 
+ set peer 192.168.1.1
+ set transform-set transform 
+ match address 120
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ crypto map vpnmap
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1.55
+ encapsulation dot1Q 55
+ ip address 192.168.5.1 255.255.255.0
+!
+interface Serial0/0/0
+ no ip address
+ clock rate 2000000
+!
+interface Serial0/0/1
+ no ip address
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ router-id 3.3.3.3
+ log-adjacency-changes
+ network 192.168.5.0 0.0.0.255 area 0
+ network 10.0.0.0 0.0.0.255 area 0
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+access-list 120 permit ip 192.168.5.0 0.0.0.255 192.168.1.0 0.0.0.255
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
